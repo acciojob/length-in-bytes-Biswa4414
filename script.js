@@ -1,5 +1,8 @@
 const byteSize = (str) => {
   // write your code here
+	 const decoder = new TextEncoder("utf-8");
+    const byteLength = decoder.encode(str).length;
+    console.log(byteLength);
 };
 
 // Do not change the code below
